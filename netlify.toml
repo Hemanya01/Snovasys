@@ -1,0 +1,5 @@
+[build]
+  # Install dependencies only if they are missing (e.g. builds from an uploaded
+  # source archive that excludes node_modules), then build with Vite.
+  command = "( [ -x node_modules/.bin/vite ] || npm ci ) && npm run build"
+  publish = "dist"
